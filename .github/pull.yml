@@ -1,0 +1,11 @@
+version: "1"
+rules:
+  - base: master
+    upstream: Sfiguz7:master
+    mergeMethod: merge
+    assignees:
+      - haiman233
+      - baoad
+    conflictReviewers:
+      - haiman233
+      - baoad
