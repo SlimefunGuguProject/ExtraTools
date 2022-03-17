@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.sfiguz7</groupId>
     <artifactId>ExtraTools</artifactId>
-    <version>31 zh-CN</version>
+    <version>UNOFFICIAL</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -35,7 +35,7 @@
     </repositories>
 
     <build>
-        <finalName>${project.name} v${project.version}</finalName>
+        <finalName>${project.name}-${project.version}</finalName>
         <defaultGoal>clean package</defaultGoal>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
@@ -56,12 +56,17 @@
                 <version>3.2.4</version>
 
                 <configuration>
+                    <minimizeJar>true</minimizeJar>
 
                     <!-- Shade dependencies into the output jar -->
                     <relocations>
                         <relocation>
-                            <pattern>org.bstats.bukkit</pattern>
+                            <pattern>org.bstats</pattern>
                             <shadedPattern>me.sfiguz7.extratools.bstats</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>net.guizhanss.guizhanlib</pattern>
+                            <shadedPattern>me.sfiguz7.extratools.guizhanlib</shadedPattern>
                         </relocation>
                     </relocations>
 
@@ -92,7 +97,7 @@
         <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
-            <version>1.7</version>
+            <version>3.0.0</version>
             <scope>compile</scope>
         </dependency>
 
@@ -104,7 +109,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.TheBusyBiscuit</groupId>
+            <groupId>io.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
             <version>RC-30</version>
             <scope>provided</scope>
@@ -118,6 +123,13 @@
                     <artifactId>bstats-bukkit</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>net.guizhanss</groupId>
+            <artifactId>GuizhanLib</artifactId>
+            <version>0.6.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

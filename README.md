@@ -1,15 +1,22 @@
-# ExtraTools
-ExtraTools is a Slimefun4 Addon I'm creating to supply useful tools which, although unnecessary, are certain to improve your Slimefun experience.
+# ExtraTools 额外工具
 
-These tools are a combination of suggestions from the community to which, as an experienced Slimefun player, I decided to add: merging community driven ideas and my personal take on ways to expand on them leads to a nice mix which is aimed at giving the feeling all items from this Addon are not a new branch of content but rather contribute in integrating already existing mechanics giving an overall boost in cohesion between the parts, resulting in utilities for server Staff and Slimefun dev purposes or simply making it more enjoyable to experience the great changes Slimefun4 already brings to the game.
+额外工具是一个 Slimefun4 附属插件，提供了一些有用的工具，尽管有些可能没有用，但这些工具一定能提升你的粘液科技游玩体验。
 
-## Contents
-### Items
-- Hammer - Pulverizes cobblestone, gravel and dirt into finer pieces;
-### Machines
-- Gold Transmuter - Turns SF gold into vanilla gold and vice versa;
-- Electric Composters - Like a Composter, but electric (duh!);
-- Cobblestone Generator - Passively creates cobble if powered;
-- Vaporizer - Salt and Sulfate production;
-- Concrete Factory - Turns Concrete Powder into Concrete, 8 at a time;
-- Pulverizer - Turns blocks into sand (allows cobblestone -> sand automation! No need to choose in Slimefun's config which recipe would work for the Electric Ore Grinder, you can have both with this).
+## 下载
+
+[![构建状态](https://builds.guizhanss.net/f/SlimefunGuguProject/ExtraTools/master/badge.svg)](https://builds.guizhanss.net/SlimefunGuguProject/ExtraTools/master)
+
+## 内容
+
+### 物品
+
+- 铁锤 - 粉碎圆石、沙砾、泥土
+
+### 机器
+
+- 黄金转化器 - 可以将粘液科技的金顶转化为原版金锭，也可以反向转换;
+- 电动堆肥机 - 堆肥机，但是电动的 (duh!);
+- 圆石生成器 - 通电后可以自动生产圆石
+- 蒸馏器 - 可以产盐与硫酸盐
+- 混凝土搅拌机 - 可以将混凝土粉末变为混凝土，一次性可搅拌8个;
+- 方块过筛机 - 可以将方块变为沙子
