@@ -38,7 +38,6 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
         int bStatsId = 6945;
         new Metrics(this, bStatsId);
 
-
         new Hammer().register(this);
         new Research(new NamespacedKey(this, "HAMMER"),
             ++researchId, "锤子", 3)
