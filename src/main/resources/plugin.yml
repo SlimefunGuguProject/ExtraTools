@@ -6,5 +6,6 @@ website: https://github.com/Sfiguz7/ExtraTools
 
 main: me.sfiguz7.extratools.ExtraTools
 depend: [Slimefun]
+softdepend: [GuizhanLibPlugin]
 
 api-version: 1.14

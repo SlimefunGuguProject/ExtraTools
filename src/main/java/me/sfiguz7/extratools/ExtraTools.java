@@ -10,12 +10,13 @@ import me.sfiguz7.extratools.implementation.machines.Pulverizer;
 import me.sfiguz7.extratools.implementation.machines.Vaporizer;
 import me.sfiguz7.extratools.implementation.tools.Hammer;
 import me.sfiguz7.extratools.lists.ETItems;
-import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
+import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
+import java.util.logging.Level;
 
 public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
@@ -27,12 +28,19 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
         instance = this;
 
+        if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
+            getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
+            getLogger().log(Level.SEVERE, "从此处下载: https://50L.cc/gzlib");
+            getServer().getPluginManager().disablePlugin(this);
+            return;
+        }
+
         if (!new File(getDataFolder(), "config.yml").exists()) {
             saveDefaultConfig();
         }
 
         if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Build")) {
-            new GuizhanBuildsUpdater(this, getFile(), "SlimefunGuguProject", "ExtraTools", "master", false).start();
+            GuizhanUpdater.start(this, getFile(), "SlimefunGuguProject", "ExtraTools", "master");
         }
 
         int bStatsId = 6945;
@@ -111,7 +119,7 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/Sfiguz7/ExtraTools/issues";
+        return "https://github.com/SlimefunGuguProject/ExtraTools/issues";
     }
 
     @Override
