@@ -4,7 +4,7 @@
 
 ## 下载
 
-[![构建状态](https://builds.guizhanss.net/f/SlimefunGuguProject/ExtraTools/master/badge.svg)](https://builds.guizhanss.net/SlimefunGuguProject/ExtraTools/master)
+[下载 ExtraTools](https://resources.guizhanss.com/plugin/ExtraTools)
 
 ## 内容
 
